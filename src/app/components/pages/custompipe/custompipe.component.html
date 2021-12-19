@@ -1,0 +1,34 @@
+<!-- <p>custompipe works!</p> -->
+
+<div class="container">
+    <button class="btn btn-danger" (click)="loadEmployee()">Load Employees</button>
+    <ng-container *ngIf="employee.length>0 then dataFound; else nodata"></ng-container>
+
+    <ng-template #nodata>
+        <div class="alert alert-danger" >No Employee record found !</div>
+    </ng-template>
+
+    <ng-template #dataFound>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Salary</th>
+                    <th>Date of Birth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let emp of employee" [ngClass]='emp.salary>=40000?"bg-warning":"bg-light"'>
+                    <td>{{emp.id }}</td>
+                    <td>{{emp.name | uppercase |formatname:emp.gender}}</td>
+                    <td>{{emp.gender | formatgender}}</td>
+                    <td>{{emp.salary | currency:"INR":"symbol"}}</td>
+                    <td>{{emp.dob | date:'mediumDate'}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </ng-template>
+</div>
+

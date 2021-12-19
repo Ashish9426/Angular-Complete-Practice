@@ -1,0 +1,47 @@
+<div class="container pt-3">
+<div class="alert bg-primary">
+    <h3 style="color: white;">Total Employee: {{Employess.length}}</h3>
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+    <div class="col-4"  *ngFor="let emp of Employess">
+        <div class="card" >
+            <div class="card-header text-info bg-secondary">
+                Name: {{emp.name}}
+            </div>
+            <div class="card-body">
+                <img [src]="emp.photo" alt="" height="100" width="100">
+                <hr>
+                Email: {{emp.email}}
+                <br>
+                Gender: {{emp.gender}}
+                <br>
+                Mobile: {{emp.mob}}
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-danger">Delete</button>
+                <button class="btn btn-info">Details</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- <div class="container pt-3">
+    <div class="row">
+        <div class="col-4 pt-3 " *ngFor="let emp of employee">
+            <div class="card" >
+                <div class="card-header bg-info">
+                    <h4>{{emp.name}}</h4>
+                </div>
+                <div class="card-body bg-light">
+                    <h5>Employee Id : {{emp.id}}</h5>
+                    <h5>Employee Gender : {{emp.gender}}</h5>
+                    <h5>Employee Salary : {{emp.salary}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

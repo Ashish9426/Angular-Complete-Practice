@@ -1,0 +1,26 @@
+<!-- <p>product works!</p> -->
+<div class="container" style="padding: 12px; background: none">
+  <div class="row">
+    <div class="col-4" *ngFor="let prd of prod?.products">
+      <div class="card">
+        <div class="card-body" style="border-color: black">
+          <h5 class="card-text" style="text-align: center">
+            Title : {{ prd.title }}
+          </h5>
+          <p class="card-title"><strong>Id :</strong> {{ prd.id }}</p>
+          <p class="card-text"><strong>Price :</strong> {{ prd.price }} Rs.</p>
+          <div class="img">
+            <img [src]="prd.image" alt="No Image" width="150" height="200" />
+          </div>
+          <p class="card-text">
+            <strong>Description :</strong> {{ prd.discription }}
+          </p>
+          <button
+            class="btn btn-info"
+            (click)="addToCart(prd.id, prd.title, prd.price)">Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

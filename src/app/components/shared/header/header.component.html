@@ -1,0 +1,139 @@
+<!-- <p>header works!</p> -->
+<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+  <div class="container-fluid">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <img [src]="src" alt="No-Image" width="90" height="60">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link btn-outline-success " aria-current="page" href="#" routerLink="/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn-outline-success" aria-current="page" href="#" routerLink="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn-outline-success" aria-current="page" href="#" routerLink="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn-outline-success" aria-current="page" href="#" routerLink="/services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn-outline-success" aria-current="page" href="#" routerLink="/product">Product</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn-outline-success" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Binding
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#" routerLink="/card">Card</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="/table">Table</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#" routerLink="/styleprop">style.prop</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="/ngstyle">ngStyle</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="/classClassName">class.className</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="/ngClass">ngClass</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#" routerLink="/eventbinding">eventBinding</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#" routerLink="/propertybinding">propertyBinding</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn-outline-success" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Pipes
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="nav-item">
+              <a class="nav-link btn-outline-success" aria-current="page" href="#" routerLink="/builtinpipe">BuiltInPipe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-outline-success" aria-current="page" href="#" routerLink="/custompipe">Custom Pipe</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn-outline-success" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Directives
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#" routerLink="/attributedirective">Attribute Directive</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="/structuraldirective">Structural Directive</a></li>
+            <li><a class="dropdown-item" href="#" routerLink="/componentdirective">Component Directive</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#" routerLink="/customedirective">Custom Directive</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn-outline-success" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Employee Detail
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="nav-link btn-outline-success" aria-current="page" href="#" routerLink="/employee">Employee
+                List</a></li>
+            <li><a class="nav-link btn-outline-success" aria-current="page" href="#" routerLink="/employee-todo">Crud
+                Employee</a></li>
+            <li><a class="nav-link btn-outline-success" aria-current="page" href="#"
+                routerLink="/employeedashboard">Crud Employee with Service</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn-outline-success" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Angular Forms
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="nav-item">
+              <a class="nav-link btn-outline-success" aria-current="page" href="#" routerLink="/template-driven-form">Template Driven Forms</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link btn-outline-success" aria-current="page" href="#" routerLink="/reactive-form">Reactive Forms</a>
+            </li>
+          </ul>
+        </li>
+
+       
+
+      </ul>
+
+      <!-- <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
+
+      <div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link btn-outline-success" href="#" routerLink="/login">Login <fa-icon [icon]="faSignInAlt">
+              </fa-icon></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-outline-success" href="#" routerLink="/registration">Signup <fa-icon
+                [icon]="faUserPlus"></fa-icon></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

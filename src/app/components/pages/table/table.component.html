@@ -1,0 +1,22 @@
+<!-- <p>table works!</p> -->
+
+<div class="container">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employee">
+                <td>{{emp.id}}</td>
+                <td>{{emp.name}}</td>
+                <td>{{emp.gender}}</td>
+                <td>{{emp.salary}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

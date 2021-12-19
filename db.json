@@ -1,0 +1,79 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "firstName": "Ashish",
+      "lastName": "Mishra",
+      "email": "ashish@gmail.com",
+      "mobile": "9875462130",
+      "salary": "54000"
+    },
+    {
+      "id": 2,
+      "firstName": "Amit",
+      "lastName": "Kumar",
+      "email": "amit@gmail.com",
+      "mobile": "9785641230",
+      "salary": "25000"
+    },
+    {
+      "id": 3,
+      "firstName": "Tarun",
+      "lastName": "Kumar",
+      "email": "tarun@gmail.com",
+      "mobile": "1456328790",
+      "salary": "42000"
+    },
+    {
+      "id": 4,
+      "firstName": "Mukul",
+      "lastName": "kumar",
+      "email": "mukul@gmail.com",
+      "mobile": "8794562132",
+      "salary": "52000"
+    },
+    {
+      "id": 5,
+      "firstName": "Abhishek",
+      "lastName": "kumar",
+      "email": "abhishek@gmail.com",
+      "mobile": "9873215648",
+      "salary": "52000"
+    },
+    {
+      "id": 6,
+      "firstName": "Vivek",
+      "lastName": "kumar",
+      "email": "vivek@gmail.com",
+      "mobile": "4568792130",
+      "salary": "52000"
+    },
+    {
+      "id": 7,
+      "firstName": "Prateek ",
+      "lastName": "Grovar",
+      "email": "prateek@gmail.com",
+      "mobile": "9874560231",
+      "salary": "85000"
+    },
+    {
+      "id": 8,
+      "firstName": "tanuj",
+      "lastName": "kumar",
+      "email": "tanuj@gmail.com",
+      "mobile": "6541239870",
+      "salary": "250000"
+    }
+  ],
+  "master": [
+    {
+    "id":1,
+    "name": "sales"
+  },
+  {
+    "id":2,
+    "name": "sales"
+  }
+
+]
+}

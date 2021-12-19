@@ -1,0 +1,18 @@
+<!-- <p>card works!</p> -->
+
+<div class="container pt-3">
+    <div class="row">
+        <div class="col-4 pt-3 " *ngFor="let emp of employee">
+            <div class="card" >
+                <div class="card-header bg-info">
+                    <h4>{{emp.name}}</h4>
+                </div>
+                <div class="card-body bg-warning">
+                    <h5>Employee Id : {{emp.id}}</h5>
+                    <h5>Employee Gender : {{emp.gender}}</h5>
+                    <h5>Employee Salary : {{emp.salary}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
